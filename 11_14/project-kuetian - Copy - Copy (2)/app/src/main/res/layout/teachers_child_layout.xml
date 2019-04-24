@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#01847e"
+    >
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:textSize="15sp"
+        android:layout_marginLeft="7dp"
+        android:paddingBottom="5dp"
+        android:autoLink="email"
+        android:textIsSelectable="false"
+        android:textColor="#ffffff"
+        android:id="@+id/tEmailTextView"
+        android:textColorLink="#ffffff"
+        android:background="@null"
+        android:linksClickable="true"
+        android:drawableLeft="@drawable/icon_email"
+        android:drawablePadding="10dp"
+        android:text="cse.repon@gmail.com"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:paddingLeft="20dp"
+        android:textSize="15sp"
+        android:layout_marginLeft="7dp"
+        android:paddingBottom="5dp"
+        android:autoLink="phone"
+        android:background="@null"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:linksClickable="true"
+        android:textAllCaps="true"
+        android:id="@+id/tContactTextView"
+        android:drawableLeft="@drawable/icon_call"
+        android:drawablePadding="10dp"
+        android:text="+8801521427885"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:paddingLeft="20dp"
+        android:textSize="15sp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginBottom="20dp"
+        android:background="@null"
+        android:textColor="#ffffff"
+        android:textColorLink="#ffffff"
+        android:id="@+id/tWebTextView"
+        android:drawableLeft="@drawable/ic_launch_black_24dp"
+        android:drawablePadding="10dp"
+        android:text="website"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

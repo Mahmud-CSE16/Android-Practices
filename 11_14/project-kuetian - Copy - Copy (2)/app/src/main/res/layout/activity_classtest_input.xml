@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/classTestLayoutId"
+    android:padding="0dp">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:weightSum="2"
+        >
+
+        <TextView
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:id="@+id/ctDateId"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:text="Date"
+            android:layout_height="match_parent" />
+        <TextView
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_weight="1"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:id="@+id/ctTimeId"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:text="Time"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+           <EditText
+               android:id="@+id/ctTitleId"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Title"
+               android:imeOptions="actionDone"
+               android:inputType="text" />
+
+
+           <EditText
+               android:id="@+id/ctDescriptionId"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Description"
+               android:imeOptions="actionDone"
+               android:inputType="textMultiLine" />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="right"
+        android:padding="4dp"
+        android:weightSum="2"
+        >
+        <TextView
+            style="@style/Base.Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:textSize="15sp"
+            android:id="@+id/ctCancelButtonId"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:text="Cancel"
+            android:layout_height="wrap_content" />
+        <TextView
+            style="@style/Base.Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:id="@+id/ctOkButtonId"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:text="OK"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

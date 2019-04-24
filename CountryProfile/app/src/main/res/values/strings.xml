@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">CountryProfile</string>
+    <string name="bangladesh_button">Bangladesh</string>
+    <string name="india_button">India</string>
+    <string name="pakistan_button">Pakistan</string>
+
+    <string name="bangladesh_profile_text">
+        Bangladesh is one of the world\'s most densely populated countries, with its people crammed into a delta of rivers that empties into the Bay of Bengal.\n\n\n
+Poverty is deep and widespread, but Bangladesh has in recent years reduced population growth and improved health and education.\n
+Formerly East Pakistan, Bangladesh came into being only in 1971, when the two parts of Pakistan split after a bitter war which drew in neighbouring India.\n
+Bangladesh spent 15 years under military rule and, although democracy was restored in 1990, the political scene remains volatile.\n
+Islamist extremism has been rising in the usually tolerant country.\n
+The low-lying country is vulnerable to flooding and cyclones, and stands to be badly affected by any rises in sea levels.\n\n
+FACTS\n
+People\'s Republic of Bangladesh
+Capital: Dhaka\n
+•	Population: 162 million\n
+•	Area: 143,998 sq km (55,598 sq miles)\n
+•	Major language: Bengali\n
+•	Major religion: Islam, Hinduism\n
+•	Life expectancy: 69 years (men), 70 years (women)\n
+•	Currency: taka\n
+UN, World Bank\n\n
+
+    </string>
+
+    <string name="india_profile_text">
+        India is the world\'s largest democracy and according to UN estimates, its population is expected to overtake China\'s in 2028 to become the world\'s most populous nation.\n\n\n
+As a rising economic powerhouse and nuclear-armed state, India has emerged as an important regional power.\n
+But it is also tackling huge, social, economic and environmental problems.\n
+Home to some of the world\' s most ancient surviving civilizations, the Indian subcontinent - from the mountainous Afghan frontier to the jungles of Burma - is both vast and diverse in terms of its people, language and cultural traditions.\n
+
+
+FACTS\n
+Republic of India\n
+Capital: New Delhi\n
+•	Population: 1.3 billion\n
+•	Area: 3.1 million sq km (1.2 million sq miles), excluding Kashmir\n
+•	Major languages: Hindi, English and more than 20 other official languages\n
+•	Major religions: Hinduism, Islam, Christianity, Sikhism, Buddhism\n
+•	Life expectancy: 67 years (men), 70 years (women)\n
+•	Currency: Rupee\n
+UN, World Bank\n
+
+    </string>
+
+    <string name="pakistan_profile_text">
+        The Muslim-majority state of Pakistan was born out of the partition of the Indian sub-continent in 1947, and has faced both domestic political upheavals and regional confrontations.\n\n
+Created to meet the demands of Indian Muslims for their own homeland, Pakistan was originally made up of two parts.\n
+The east wing - present-day Bangladesh - is on the Bay of Bengal bordering India and Burma. The west wing - present-day Pakistan - stretches from the Himalayas down to the Arabian Sea.\n
+The break-up of the two wings came in 1971 when the Bengali-speaking east wing seceded with help from India.\n
+FACTS\n
+Islamic Republic of Pakistan\n
+Capital: Islamabad\n
+•	Population: 197 million\n
+•	Area: 796,095 sq km (307,374 sq miles), excluding Kashmir\n
+•	Major languages: English, Urdu, Punjabi, Sindhi, Pashto, Balochi\n
+•	Major religion: Islam\n
+•	Life expectancy: 66 years (men), 68 years (women)\n
+•	Currency: Pakistani Rupee\n
+UN, World Bank\n
+
+
+
+    </string>
+</resources>

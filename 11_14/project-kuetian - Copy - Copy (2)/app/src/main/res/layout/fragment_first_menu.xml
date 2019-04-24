@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/menuFirst">
+
+    <ScrollView
+        android:id="@+id/automationScrollView"
+        android:layout_width="match_parent"
+        android:paddingEnd="5dp"
+        android:paddingBottom="5dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:weightSum="2"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/main_menu_background"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                    <Button
+                        android:id="@+id/hallButton"
+                        style="@style/firstMenuButtonStyle"
+                        android:drawableLeft="@drawable/icon_hall"
+                        android:text="Hall" />
+                    <Button
+                        android:id="@+id/academicButton"
+                        style="@style/firstMenuButtonStyle"
+                        android:drawableLeft="@drawable/icon_academic"
+                        android:text="Academic" />
+                    <Button
+                        android:id="@+id/libraryButton"
+                        style="@style/firstMenuButtonStyle"
+                        android:drawableLeft="@drawable/icon_library"
+                        android:text="Library" />
+                    <Button
+                        android:id="@+id/automationButton"
+                        style="@style/firstMenuButtonStyle"
+                        android:drawableLeft="@drawable/icon_automation"
+                        android:text="Automation"
+                        />
+                    <Button
+                        android:id="@+id/kuetWebButton"
+                        style="@style/firstMenuButtonStyle"
+                        android:drawableLeft="@drawable/icon_web"
+                        android:text="KUET Web" />
+
+                    <Button
+                        android:id="@+id/performanceButton"
+                        style="@style/firstMenuButtonStyle"
+                        android:drawableLeft="@drawable/icon_performance"
+                        android:text="Performance" />
+
+                    <Button
+                        android:id="@+id/busesButton"
+                        style="@style/firstMenuButtonStyle"
+                        android:drawableLeft="@drawable/icon_bus"
+                        android:text="Buses"
+                        />
+                    <Button
+                        android:id="@+id/settingsButton"
+                        style="@style/firstMenuButtonStyle"
+                        android:drawableLeft="@drawable/icon_setting"
+                        android:text="Settings" />
+                    <Button
+                        android:id="@+id/aboutButton"
+                        style="@style/firstMenuButtonStyle"
+                        android:drawableLeft="@drawable/icon_about"
+                        android:text="About" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/profileButton"
+                    style="@style/firstMenuButtonStyle"
+                    android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+                    android:text="Profile" />
+                <Button
+                    android:id="@+id/routineButton"
+                    style="@style/firstMenuButtonStyle"
+                    android:drawableLeft="@drawable/icon_routine"
+                    android:text="Routine" />
+
+                <Button
+                    android:id="@+id/ctButton"
+                    style="@style/firstMenuButtonStyle"
+                    android:drawableLeft="@drawable/icon_ct_two"
+                    android:text="CT and Others" />
+
+                <Button
+                    android:id="@+id/scheduleButton"
+                    style="@style/firstMenuButtonStyle"
+                    android:drawableLeft="@drawable/icon_schedule"
+                    android:text="Schedules" />
+
+                <Button
+                    android:id="@+id/classmatesButton"
+                    style="@style/firstMenuButtonStyle"
+                    android:drawableLeft="@drawable/icon_classmate"
+                    android:text="Classmates" />
+
+                <Button
+                    android:id="@+id/teachersButton"
+                    style="@style/firstMenuButtonStyle"
+                    android:drawableLeft="@drawable/icon_teacher"
+                    android:text="Teachers" />
+
+                <Button
+                    android:id="@+id/groupsButton"
+                    style="@style/firstMenuButtonStyle"
+                    android:drawableLeft="@drawable/icon_group"
+                    android:text="Groups" />
+
+                <Button
+                    android:id="@+id/salahTimesButton"
+                    style="@style/firstMenuButtonStyle"
+                    android:drawableLeft="@drawable/icon_salah"
+                    android:text="Salah Times" />
+
+                <Button
+                    android:id="@+id/signoutButton"
+                    style="@style/firstMenuButtonStyle"
+                    android:drawableLeft="@drawable/icon_signout"
+                    android:text="Signout" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+   <!-- <ImageView
+        android:scaleType="fitEnd"
+        android:layout_gravity="bottom"
+        android:layout_width="wrap_content"
+        android:src="@drawable/kuetian_logo"
+        android:layout_height="wrap_content" />-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/menuclosefab"
+        android:layout_alignBottom="@id/automationScrollView"
+        android:layout_alignEnd="@id/automationScrollView"
+        android:layout_width="wrap_content"
+        android:src="@drawable/icon_downarrow"
+        android:layout_height="wrap_content"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="#5656b1"
+    tools:context=".MainActivity">
+
+    <AnalogClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/BangladeshButtonId"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/bangladesh"
+        android:text="@string/bangladesh_button"
+        android:textAllCaps="false"
+        android:textColor="#00000b"
+        android:textSize="30sp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/IndiaButtonId"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/india"
+        android:text="@string/india_button"
+        android:textAllCaps="false"
+        android:textColor="#00000b"
+        android:textSize="30sp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/PakistanButtonId"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="331dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/pakistan"
+        android:text="@string/pakistan_button"
+        android:textAllCaps="false"
+        android:textColor="#00000b"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

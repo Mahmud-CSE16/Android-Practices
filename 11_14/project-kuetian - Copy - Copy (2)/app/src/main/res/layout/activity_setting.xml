@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_background"
+        tools:context=".SettingActivity"
+        android:id="@+id/hallSetting">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_marginBottom="40dp"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:padding="20dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+               <Switch
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:id="@+id/hallSwitch"
+                    android:textColor="@color/white"
+                    android:drawableStart="@drawable/icon_hall"
+                    android:drawablePadding="10dp"
+                    android:text="Hall Auto Login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:id="@+id/hallSettingLinearLayout"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Spinner
+                        android:pointerIcon="text"
+                        android:id="@+id/hallSpinner"
+                        android:popupBackground="#7300ba"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                    </Spinner>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_marginTop="10dp"
+                        style="@style/settingsTextStyle">
+                        <EditText android:id="@+id/hallIdEditText"
+                            style="@style/settingsEditTextStyle"
+                            android:inputType="textPersonName"
+                            android:nextFocusDown="@id/hallPasswordEditText"
+                            android:imeOptions="actionNext"
+                            android:hint="Hall ID" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/settingsTextStyle">
+                        <EditText android:id="@+id/hallPasswordEditText"
+                            style="@style/settingsEditTextStyle"
+                            android:inputType="textPassword"
+                            android:imeOptions="actionNext"
+                            android:hint="Hall Password" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+                <Switch
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="17sp"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    android:id="@+id/acaSwitch"
+                    android:textColor="@color/white"
+                    android:drawableStart="@drawable/icon_academic"
+                    android:drawablePadding="10dp"
+                    android:text="Academic Auto Login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:id="@+id/acaSettingLinearLayout"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_marginTop="10dp"
+                        style="@style/settingsTextStyle">
+                        <EditText android:id="@+id/acaIdEditText"
+                            style="@style/settingsEditTextStyle"
+                            android:inputType="textPersonName"
+                            android:nextFocusDown="@id/hallPasswordEditText"
+                            android:imeOptions="actionNext"
+                            android:hint="Academic ID" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/settingsTextStyle">
+                        <EditText android:id="@+id/acaPasswordEditText"
+                            style="@style/settingsEditTextStyle"
+                            android:inputType="textPassword"
+                            android:imeOptions="actionNext"
+                            android:hint="Academic Password" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+                <Switch
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="17sp"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/librarySwitch"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:drawableStart="@drawable/icon_library"
+                    android:drawablePadding="10dp"
+                    android:text="Library Auto Login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:id="@+id/librarySettingLinearLayout"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_marginTop="10dp"
+                        style="@style/settingsTextStyle">
+                        <EditText android:id="@+id/libraryIdEditText"
+                            style="@style/settingsEditTextStyle"
+                            android:inputType="textPersonName"
+                            android:nextFocusDown="@id/hallPasswordEditText"
+                            android:imeOptions="actionNext"
+                            android:hint="Library ID" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        style="@style/settingsTextStyle">
+                        <EditText android:id="@+id/libraryPasswordEditText"
+                            style="@style/settingsEditTextStyle"
+                            android:inputType="textPassword"
+                            android:imeOptions="actionNext"
+                            android:hint="Library Password" />
+                    </android.support.design.widget.TextInputLayout>
+                    <Switch
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="15sp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/libraryRenewSwitch"
+                        android:textColor="@color/white"
+                        android:drawableStart="@drawable/icon_library_two"
+                        android:drawablePadding="10dp"
+                        android:textStyle="bold"
+                        android:text="Library auto renew"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <LinearLayout
+                        android:id="@+id/libraryRenewLinearLayout"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:gravity="end"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:background="@drawable/button_state_color_two"
+                                android:padding="7dp"
+                                android:layout_height="35dp"
+                                android:layout_margin="5dp"
+                                android:textSize="11sp"
+                                android:textColor="@color/white"
+                                android:text="Schedule"
+                                android:id="@+id/libraryRenewSchedule"
+                                android:layout_width="wrap_content"
+                                android:textAllCaps="false"
+                                android:drawableLeft="@drawable/icon_schedule"
+                                />
+                            <Button
+                                android:background="@drawable/button_state_color_two"
+                                android:padding="7dp"
+                                android:layout_height="35dp"
+                                android:layout_margin="5dp"
+                                android:textSize="11sp"
+                                android:textColor="@color/white"
+                                android:text="Renew all"
+                                android:textAllCaps="false"
+                                android:id="@+id/libraryRenewAll"
+                                android:layout_width="wrap_content"
+                                android:drawableLeft="@drawable/icon_renew_all"
+                                />
+                            <Button
+                                android:background="@drawable/button_state_color_two"
+                                android:padding="7dp"
+                                android:layout_height="35dp"
+                                android:layout_margin="5dp"
+                                android:textSize="11sp"
+                                android:textColor="@color/white"
+                                android:text="Refresh"
+                                android:textAllCaps="false"
+                                android:id="@+id/libraryRenewRefreshId"
+                                android:layout_width="wrap_content"
+                                android:drawableLeft="@drawable/ic_refresh_black_24dp"
+                                />
+                        </LinearLayout>
+
+                        <TextView
+                            android:padding="5dp"
+                            android:background="#15ffffff"
+                            android:id="@+id/libraryRenewTextView"
+                            android:layout_width="match_parent"
+                            android:textSize="12sp"
+                            android:textColor="#ffffff"
+                            android:text="Refresh to view your borrowed library books \ninformation."
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+              <Switch
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="17sp"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/salahSwitch"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                  android:drawableStart="@drawable/icon_salah"
+                  android:drawablePadding="10dp"
+                    android:text="Salah times"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <Switch
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="17sp"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/notificationSwitch"
+                    android:textColor="@color/white"
+                    android:textStyle="bold|italic"
+                    android:drawableStart="@drawable/icon_schedule"
+                    android:drawablePadding="10dp"
+                    android:text="Notification setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:background="#3500dbdf"
+                    android:id="@+id/notificationSettingLinearLayout"
+                    android:orientation="vertical"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Switch
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="13sp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/vibrateModeSwitch"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:text="Vibrate mode during classes and labs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <Switch
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="13sp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/classNotSwitch"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:text="Class Notification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <Switch
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="13sp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/ctNotSwitch"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:text="CT Notification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <Switch
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="13sp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/perScheNotSwitch"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:text="Personal Schedule Notification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <Switch
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="15sp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/salahNotSwitch"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:text="Salah Notification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="17sp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:text="CR Setting"
+                    android:drawableStart="@drawable/icon_sync"
+                    android:drawablePadding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginTop="10dp"
+                    style="@style/signupTextStyle">
+                <EditText android:id="@+id/CRListEditText"
+                    style="@style/signupEditTextStyle"
+                    android:text="001,061"
+                    android:inputType="none"
+                    android:layout_gravity="center"
+                    android:nextFocusDown="@id/input_hometown"
+                    android:imeOptions="actionNext"
+                    android:hint="CR Roll (Last 3 digits)" />
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:background="@drawable/button_state_color_two"
+                        android:padding="10dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="5dp"
+                        android:textSize="11sp"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:id="@+id/updateCRListButton"
+                        android:text="Update CR List"
+                        android:layout_width="wrap_content"
+                         />
+                    <Button
+                        android:background="@drawable/button_state_color_two"
+                        android:padding="10dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="5dp"
+                        android:textSize="11sp"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:id="@+id/refreshCRListButton"
+                        android:text="Refresh CR List"
+                        android:layout_width="wrap_content"
+                         />
+                </LinearLayout>
+
+
+
+                    <TextView
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="17sp"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:drawableStart="@drawable/icon_group"
+                        android:drawablePadding="10dp"
+                        android:text="Group Setting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_marginTop="10dp"
+                        style="@style/signupTextStyle">
+                        <EditText android:id="@+id/groupLinkEditText"
+                            style="@style/signupEditTextStyle"
+                            android:text=""
+                            android:inputType="none"
+                            android:layout_gravity="center"
+                            android:nextFocusDown="@id/input_hometown"
+                            android:imeOptions="actionNext"
+                            android:hint="Group link" />
+                    </android.support.design.widget.TextInputLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:background="@drawable/button_state_color_two"
+                        android:padding="10dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="5dp"
+                        android:textSize="11sp"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:id="@+id/updateGroupLinkButton"
+                        android:text="Update Link"
+                        android:layout_width="wrap_content"
+                         />
+                    <Button
+                        android:background="@drawable/button_state_color_two"
+                        android:padding="10dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="11sp"
+                        android:textAllCaps="false"
+                        android:id="@+id/refreshGroupLinkButton"
+                        android:text="Refresh Link"
+                        android:layout_width="wrap_content"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <!--<ImageView
+            android:scaleType="fitEnd"
+            android:layout_gravity="bottom"
+            android:layout_width="wrap_content"
+            android:src="@drawable/kuetian_logo"
+            android:layout_height="wrap_content" />-->
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/menuclosefab"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_gravity="right|bottom"
+            android:layout_width="wrap_content"
+            android:src="@drawable/icon_check"
+            android:layout_height="wrap_content"
+            />
+
+    </FrameLayout>

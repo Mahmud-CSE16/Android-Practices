@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/linearlayout"
+    android:background="@drawable/main_background"
+    android:fitsSystemWindows="true">
+
+    <ScrollView
+        android:layout_gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="55dp"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textSize="40sp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                />
+            <EditText android:id="@+id/input_email"
+                style="@style/loginTextStyle"
+                android:layout_marginTop="50dp"
+
+                android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+                android:hint="Roll Number"
+                android:nextFocusDown="@id/input_password"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"/>
+            <EditText android:id="@+id/input_password"
+                style="@style/loginTextStyle"
+                android:drawableLeft="@drawable/ic_lock_open_black_24dp"
+                android:inputType="textPassword"
+                android:nextFocusDown="@id/btn_login"
+                android:imeOptions="actionDone"
+                android:hint="Password"/>
+
+            <Button
+                android:background="@drawable/button_state_color_two"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/btn_login"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="14dp"
+                android:padding="7dp"
+                android:text="Login"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingTop="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:textColor="#ffffff"
+                    android:textStyle="italic"
+                    android:text="No account yet?"
+                    android:gravity="center"
+                    android:textSize="13sp"/>
+                <Button
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:id="@+id/link_signup"
+                    android:padding="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:textColor="#ffffff"
+                    android:textAllCaps="false"
+                    android:drawableLeft="@drawable/ic_chevron_right_black_24dp"
+                    android:textStyle="italic"
+                    android:text="Create one"
+                    android:gravity="center"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+            <Button
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:id="@+id/forgotButton"
+                android:padding="2dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:textStyle="bold|italic"
+                android:text="Forgot Password?"
+                android:gravity="center"
+                android:visibility="gone"
+                android:textSize="13sp"/>
+            <Button
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:id="@+id/verifyButton"
+                android:padding="2dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:drawableStart="@drawable/ic_chevron_right_black_24dp"
+                android:textStyle="bold|italic"
+                android:text="Send verification email again"
+                android:visibility="gone"
+                android:gravity="center"
+                android:textSize="13sp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:id="@+id/loginAboutButton"
+        android:layout_gravity="end"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="5dp"
+        android:drawableEnd="@drawable/icon_about"
+        />
+    <ImageView android:src="@drawable/kuetian_logo"
+        android:scaleType="fitEnd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom" />
+</FrameLayout>

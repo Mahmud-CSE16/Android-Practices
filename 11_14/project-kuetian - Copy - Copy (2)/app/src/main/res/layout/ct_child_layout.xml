@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:orientation="vertical"
+    android:background="#52000000"
+    >
+
+    <TextView
+        android:paddingLeft="?android:expandableListPreferredItemPaddingLeft"
+        android:textSize="12sp"
+        android:layout_marginLeft="7dp"
+        android:paddingBottom="5dp"
+        android:textColor="#e4e2e2"
+        android:id="@+id/ctChildTextId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

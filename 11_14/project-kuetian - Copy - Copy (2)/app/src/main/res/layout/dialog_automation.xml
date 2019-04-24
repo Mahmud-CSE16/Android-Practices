@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/menuFirst">
+
+    <ScrollView
+        android:id="@+id/automationScrollView"
+        android:layout_width="match_parent"
+        android:paddingEnd="5dp"
+        android:paddingBottom="5dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_menu_background"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <Button
+                android:background="@drawable/dialog_head_background"
+                style="@style/firstMenuButtonStyle"
+                android:layout_width="match_parent"
+                android:drawableLeft="@drawable/icon_academic"
+                android:text="Academic Automation" />
+            <Button
+                android:id="@+id/acaSysButton"
+                style="@style/firstMenuButtonStyle"
+                android:drawableLeft="@drawable/ic_chevron_right_black_24dp"
+                android:text="Academic System" />
+            <Button
+                android:id="@+id/centralLibraryButton"
+                style="@style/firstMenuButtonStyle"
+                android:drawableLeft="@drawable/ic_chevron_right_black_24dp"
+                android:text="Central Library" />
+            <Button
+                android:background="#35ffffff"
+                style="@style/firstMenuButtonStyle"
+                android:layout_width="match_parent"
+                android:drawableLeft="@drawable/icon_hall"
+                android:text="Hall Automation" />
+            <Button
+                android:id="@+id/fhhButton"
+                style="@style/firstMenuButtonStyle"
+                android:drawableLeft="@drawable/ic_chevron_right_black_24dp"
+                android:text="Fazlul Haque Hall" />
+            <Button
+                android:id="@+id/lshButton"
+                style="@style/firstMenuButtonStyle"
+                android:drawableLeft="@drawable/ic_chevron_right_black_24dp"
+                android:text="Lalan Shah Hall" />
+            <Button
+                android:id="@+id/khButton"
+                style="@style/firstMenuButtonStyle"
+                android:drawableLeft="@drawable/ic_chevron_right_black_24dp"
+                android:text="Khan Jahan Ali Hall" />
+            <Button
+                android:id="@+id/arhButton"
+                style="@style/firstMenuButtonStyle"
+                android:drawableLeft="@drawable/ic_chevron_right_black_24dp"
+                android:text="Dr. M.A Rahsid Hall" />
+            <Button
+                android:id="@+id/rkhButton"
+                style="@style/firstMenuButtonStyle"
+                android:drawableLeft="@drawable/ic_chevron_right_black_24dp"
+                android:text="Rokeya Hall" />
+            <Button
+                android:id="@+id/aehButton"
+                style="@style/firstMenuButtonStyle"
+                android:drawableLeft="@drawable/ic_chevron_right_black_24dp"
+                android:text="Amar Ekushey Hall" />
+            <Button
+                android:id="@+id/bbhButton"
+                style="@style/firstMenuButtonStyle"
+                android:drawableLeft="@drawable/ic_chevron_right_black_24dp"
+                android:text="Bangabandhu Shiekh Mujibur Rahman Hall" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- <ImageView
+         android:scaleType="fitEnd"
+         android:layout_gravity="bottom"
+         android:layout_width="wrap_content"
+         android:src="@drawable/kuetian_logo"
+         android:layout_height="wrap_content" />-->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/automationCloseFab"
+        android:layout_alignBottom="@id/automationScrollView"
+        android:layout_alignEnd="@id/automationScrollView"
+        android:layout_width="wrap_content"
+        android:src="@drawable/icon_downarrow"
+        android:layout_height="wrap_content"
+        />
+
+</RelativeLayout>

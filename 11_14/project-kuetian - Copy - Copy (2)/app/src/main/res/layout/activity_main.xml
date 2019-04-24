@@ -1,0 +1,458 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/main_background"
+    android:id="@+id/contentPage"
+    android:elevation="10dp"
+    tools:context=".MainActivity">
+    <repon.cse.kuetian.refresh_view.PullToRefreshView
+        android:id="@+id/mainRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/mainLinearLayout"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/profilePhotoId"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/icon_verified_user" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/welcomeTextId"
+                        style="@style/morning"
+                        android:text="@string/morning" />
+                    <TextView
+                        android:id="@+id/userNameId"
+                        style="@style/userName"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/user_name" />
+                    <TextView
+                        android:id="@+id/deptTextId"
+                        style="@style/dept"
+                        android:text="@string/dept" />
+
+
+                </LinearLayout>
+
+
+                    <TextView
+                        android:layout_gravity="end|bottom"
+                        android:id="@+id/dateTextId"
+                        style="@style/dept"
+                        android:textSize="13sp"
+                        android:textStyle="italic"
+                        android:gravity="end"
+                        android:layout_marginBottom="7dp"
+                        android:text="@string/date" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/classLinearLayoutId"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="7dp"
+                android:background="@drawable/schedule_background"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/HomeActivityTitle"
+                        android:id="@+id/classTitleId"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:text="@string/routine_title" />
+                    <ImageView
+                        android:id="@+id/routineRefreshId"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_refresh_black_24dp"
+                        />
+                    <ImageView
+                        android:id="@+id/routineLaunchId"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_launch_black_24dp"
+                        />
+                </LinearLayout>
+
+
+                <TableLayout
+
+                    android:id="@+id/classTableLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingTop="5dp"
+                    android:stretchColumns="*">
+                    <TableRow style="@style/tableRowStyle">
+                        <TextView style="@style/courseCode" />
+                        <TextView style="@style/courseCode" />
+                        <TextView style="@style/courseCode" />
+                    </TableRow>
+                    <TableRow style="@style/tableRowStyle">
+                        <TextView style="@style/teacherName" />
+                        <TextView style="@style/teacherName" />
+                        <TextView style="@style/teacherName" />
+                    </TableRow>
+                    <TableRow style="@style/tableRowStyle">
+                        <TextView style="@style/courseCode" />
+                        <TextView style="@style/courseCode" />
+                        <TextView style="@style/courseCode" />
+                    </TableRow>
+                    <TableRow style="@style/tableRowStyle">
+                        <TextView style="@style/teacherName" />
+                        <TextView style="@style/teacherName" />
+                        <TextView style="@style/teacherName" />
+                    </TableRow>
+                    <TableRow style="@style/tableRowStyle">
+                        <TextView style="@style/courseCode" />
+                        <TextView style="@style/courseCode" />
+                        <TextView style="@style/courseCode" />
+                    </TableRow>
+
+                    <TableRow style="@style/tableRowStyle">
+                        <TextView style="@style/teacherName" />
+                        <TextView style="@style/teacherName" />
+                        <TextView style="@style/teacherName" />
+                    </TableRow>
+                </TableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="7dp"
+                android:background="@drawable/ct_background"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/HomeActivityTitle"
+                        android:id="@+id/ctHeadId"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:text="@string/ct_title" />
+                    <ImageView
+                        android:id="@+id/ctRefreshId"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_refresh_black_24dp"
+                        />
+                    <ImageView
+                        android:id="@+id/ctLaunchId"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_launch_black_24dp"
+                        />
+                </LinearLayout>
+
+                <ExpandableListView
+                    android:paddingTop="17dp"
+                    android:paddingBottom="15dp"
+                    android:id="@+id/ctListViewId"
+                    android:divider="#00ffffff"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </ExpandableListView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/weatherLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="7dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:gravity="end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:background="@drawable/button_state_color_two"
+                        android:padding="7dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="5dp"
+                        android:textSize="11sp"
+                        android:textColor="@color/white"
+                        android:text="Weather"
+                        android:id="@+id/weatherButton"
+                        android:layout_width="wrap_content"
+                        android:textAllCaps="false"
+                        />
+                    <Button
+                        android:background="@drawable/button_state_color_two"
+                        android:padding="7dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="5dp"
+                        android:textSize="11sp"
+                        android:textColor="@color/white"
+                        android:text="Location"
+                        android:textAllCaps="false"
+                        android:id="@+id/locationButton"
+                        android:layout_width="wrap_content"
+                        />
+                    <Button
+                    android:background="@drawable/button_state_color_two"
+                    android:padding="7dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="5dp"
+                    android:textSize="11sp"
+                    android:textColor="@color/white"
+                    android:text="Blog"
+                    android:textAllCaps="false"
+                    android:id="@+id/blogButton"
+                    android:layout_width="wrap_content"
+                    />
+                    <Button
+                        android:background="@drawable/button_state_color_two"
+                        android:padding="7dp"
+                        android:layout_height="35dp"
+                        android:layout_margin="5dp"
+                        android:textSize="11sp"
+                        android:textColor="@color/white"
+                        android:text="Browser"
+                        android:textAllCaps="false"
+                        android:id="@+id/browserButton"
+                        android:layout_width="wrap_content"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mainSalahLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="7dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold|italic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/salahTime_title" />
+                <TableLayout
+                    android:background="#25ffffff"
+                    android:id="@+id/salahTableLayout"
+                    android:stretchColumns="*"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:paddingBottom="5dp"
+                    android:orientation="vertical">
+                    <TableRow
+                        android:id="@+id/salahRow0"
+                        android:weightSum="5"
+                        android:layout_width="0dp"
+                        android:layout_marginTop="5dp">
+                        <TextView
+                            android:id="@+id/salahText0"
+                            style="@style/salahTime"
+                            android:text="Fazr" />
+                        <TextView
+                            android:id="@+id/salahText1"
+                            style="@style/salahTime"
+                            android:text="Zuhr" />
+                        <TextView
+                            android:id="@+id/salahText2"
+                            style="@style/salahTime"
+                            android:text="Asar" />
+                        <TextView
+                            android:id="@+id/salahText3"
+                            style="@style/salahTime"
+                            android:text="Maghrib" />
+                        <TextView
+                            android:id="@+id/salahText4"
+                            style="@style/salahTime"
+                            android:text="Esha" />
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/salahRow1"
+                        android:weightSum="5"
+                        android:layout_width="0dp">
+                        <TextView
+                            android:id="@+id/salahTime0"
+                            style="@style/salahTime2"
+                            android:text="5.50" />
+                        <TextView
+                            android:id="@+id/salahTime1"
+                            style="@style/salahTime2"
+                            android:text="1.30" />
+                        <TextView
+                            android:id="@+id/salahTime2"
+                            style="@style/salahTime2"
+                            android:text="4.15" />
+                        <TextView
+                            android:id="@+id/salahTime3"
+                            style="@style/salahTime2"
+                            android:text="5.25" />
+                        <TextView
+                            android:id="@+id/salahTime4"
+                            style="@style/salahTime2"
+                            android:text="8.30" />
+                    </TableRow>
+                </TableLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="7dp"
+                android:background="@drawable/schedule_background"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="10"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/HomeActivityTitle"
+                        android:id="@+id/scheduleHeadId"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8"
+                        android:text="@string/schedule_title" />
+                    <ImageView
+                        android:id="@+id/scheduleRefreshId"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_refresh_black_24dp"
+                        />
+                    <ImageView
+                        android:id="@+id/scheduleLaunchId"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_launch_black_24dp"
+                        />
+                </LinearLayout>
+                <ExpandableListView
+                    android:paddingTop="17dp"
+                    android:paddingBottom="15dp"
+                    android:divider="#00ffffff"
+                    android:id="@+id/scheduleListViewId"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </ExpandableListView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="7dp"
+                android:background="@drawable/note_background"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/HomeActivityTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/note_title" />
+                <EditText
+                    android:nestedScrollingEnabled="true"
+                    android:padding="10dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorWhite"
+                    android:inputType="textMultiLine"
+                    android:id="@+id/noteEditTextId"
+                    android:gravity="top|left"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+    </repon.cse.kuetian.refresh_view.PullToRefreshView>
+
+
+    <TextView
+        android:id="@+id/rollNumberTextViewId"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        />
+    <android.support.design.widget.FloatingActionButton
+        style="@style/Widget.Design.FloatingActionButton"
+        android:id="@+id/menuopenfab"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="right|bottom"
+        android:layout_width="wrap_content"
+        android:src="@drawable/icon_menu"
+        android:layout_height="wrap_content"
+
+        />
+
+</FrameLayout>

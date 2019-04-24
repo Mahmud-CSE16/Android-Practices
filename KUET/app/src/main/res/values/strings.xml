@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">KUET</string>
+    <string name="home_button_text">Home Side</string>
+    <string name="academic_button_text">Academic Corner</string>
+    <string name="studentCorner_button_text">Student Corner</string>
+    <string name="library_button_text">Central Library</string>
+    <string name="busSchedule_button_text">Bus Schedule</string>
+</resources>

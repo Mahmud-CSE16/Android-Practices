@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+    <repon.cse.kuetian.refresh_view.PullToRefreshView
+        android:id="@+id/profileRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/main_background"
+        android:fitsSystemWindows="true">
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp">
+
+            <ImageView android:src="@drawable/icon_verified_user"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="40dp"
+                android:gravity="center_horizontal"
+                />
+
+            <!-- Name Label -->
+            <android.support.design.widget.TextInputLayout
+                style="@style/signupTextStyle">
+                <EditText android:id="@+id/input_fullname"
+                    style="@style/signupEditTextStyle"
+                    android:inputType="textPersonName"
+                    android:nextFocusDown="@id/input_nickname"
+                    android:imeOptions="actionNext"
+                    android:hint="Full Name" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                style="@style/signupTextStyle">
+                <EditText android:id="@+id/input_nickname"
+                    style="@style/signupEditTextStyle"
+                    android:inputType="textPersonName"
+                    android:nextFocusDown="@id/input_hometown"
+                    android:imeOptions="actionNext"
+                    android:hint="Nick Name" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                style="@style/signupTextStyle">
+                <EditText android:id="@+id/input_hometown"
+                    style="@style/signupEditTextStyle"
+                    android:inputType="textPersonName"
+                    android:nextFocusDown="@id/input_college"
+                    android:imeOptions="actionNext"
+                    android:hint="Home Town" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                style="@style/signupTextStyle">
+                <EditText android:id="@+id/input_college"
+                    style="@style/signupEditTextStyle"
+                    android:inputType="textPersonName"
+                    android:nextFocusDown="@id/input_birthday"
+                    android:imeOptions="actionNext"
+                    android:hint="College" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                style="@style/signupTextStyle">
+                <EditText android:id="@+id/input_birthday"
+                    style="@style/signupEditTextStyle"
+                    android:inputType="textPersonName"
+                    android:nextFocusDown="@id/input_bloodgroup"
+                    android:imeOptions="actionNext"
+                    android:hint="Birthday" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                style="@style/signupTextStyle">
+                <EditText android:id="@+id/input_bloodgroup"
+                    style="@style/signupEditTextStyle"
+                    android:inputType="textPersonName"
+                    android:nextFocusDown="@id/input_rollNumber"
+                    android:imeOptions="actionNext"
+                    android:hint="Blood Group" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                style="@style/signupTextStyle">
+                <EditText android:id="@+id/input_Religion"
+                    style="@style/signupEditTextStyle"
+                    android:inputType="textPersonName"
+                    android:nextFocusDown="@id/input_mobile"
+                    android:imeOptions="actionNext"
+                    android:hint="Religion" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!-- mobile number -->
+            <android.support.design.widget.TextInputLayout
+                style="@style/signupTextStyle">
+                <EditText android:id="@+id/input_mobile"
+                    style="@style/signupEditTextStyle"
+                    android:hint="Mobile Number"
+                    android:nextFocusDown="@id/btn_updateProfile"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="italic"
+                android:background="#3273ffda"
+                android:text="[ Your info in this profile is visible to your classmates ]"
+                android:layout_height="wrap_content" />
+            <!-- Signup Button -->
+
+            <android.support.v7.widget.AppCompatButton
+                style="@style/Base.Widget.AppCompat.Button.Colored"
+                android:id="@+id/btn_updateProfile"
+                android:layout_width="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="24dp"
+                android:padding="12dp"
+                android:textAllCaps="false"
+                android:text="Update My Profile"/>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+    </repon.cse.kuetian.refresh_view.PullToRefreshView>
+
+</LinearLayout>

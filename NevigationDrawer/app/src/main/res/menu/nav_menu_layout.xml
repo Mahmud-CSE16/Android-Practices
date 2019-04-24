@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/homeMenuId"
+            android:title="Home"
+            android:icon="@drawable/ic_home_black_24dp"
+            />
+        <item
+            android:id="@+id/profileMenuId"
+            android:title="Profile"
+            android:icon="@drawable/ic_person_black_24dp"
+            />
+        <item
+            android:id="@+id/chatMenuId"
+            android:title="Chat"
+            android:icon="@drawable/ic_chat_black_24dp"
+            />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/shareMenuId"
+                android:title="Share"
+                android:icon="@drawable/ic_share_black_24dp"/>
+            <item
+                android:id="@+id/ContactMenuId"
+                android:title="Contact me"
+                android:icon="@drawable/ic_contact_phone_black_24dp"/>
+        </menu>
+    </item>
+
+
+</menu>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Zogaan</string>
+    <array name="Specialist">
+        <item>Programming</item>
+        <item>Android Developing</item>
+        <item>Web Developing</item>
+        <item>HardWare</item>
+        <item>Robotics</item>
+        <item>Electricity</item>
+    </array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

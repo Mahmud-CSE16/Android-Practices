@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "70623211818",
+    "firebase_url": "https://kuetian-dc101.firebaseio.com",
+    "project_id": "kuetian-dc101",
+    "storage_bucket": "kuetian-dc101.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70623211818:android:98dc71a5d60265a0",
+        "android_client_info": {
+          "package_name": "repon.cse.kuetian"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70623211818-ev60a2g0d7m1psisr1l80tpoi30vtp8q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ7O7nWSfRjFCavF9s3gcRui0xvxwFFR4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">SpinnerDemo</string>
+
+    <string-array name="student_rolls">
+        <item>1607001</item>
+        <item>1607002</item>
+        <item>1607003</item>
+        <item>1607004</item>
+        <item>1607005</item>
+        <item>1607006</item>
+        <item>1607007</item>
+        <item>1607008</item>
+        <item>1607009</item>
+        <item>1607010</item>
+        <item>1607011</item>
+        <item>1607012</item>
+        <item>1607013</item>
+        <item>1607014</item>
+        <item>1607015</item>
+        <item>1607016</item>
+        <item>1607017</item>
+        <item>1607018</item>
+        <item>1607019</item>
+        <item>1607020</item>
+        <item>1607021</item>
+        <item>1607022</item>
+        <item>1607023</item>
+        <item>1607024</item>
+        <item>1607025</item>
+        <item>1607026</item>
+        <item>1607027</item>
+        <item>1607028</item>
+        <item>1607029</item>
+        <item>1607030</item>
+
+    </string-array>
+</resources>

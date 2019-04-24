@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".LongActivity">
+
+    <ImageView
+        android:id="@+id/ImageViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bangladesh"
+        android:scaleType="fitXY"
+        android:padding="10dp"
+        />
+
+    <EditText
+        android:id="@+id/EditTextNameId"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:hint="Enter your Name"
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableRight="@drawable/namelock"/>
+    <EditText
+        android:id="@+id/EditTextPasswordId"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:hint="Enter Password"
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:drawableRight="@drawable/namelock"/>
+
+    <Button
+        android:id="@+id/ButtonId"
+        android:layout_marginTop="20dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="30sp"
+
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#1D1DA8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        />
+    <TextView
+        android:id="@+id/TextViewId"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login times"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"/>
+
+</LinearLayout>

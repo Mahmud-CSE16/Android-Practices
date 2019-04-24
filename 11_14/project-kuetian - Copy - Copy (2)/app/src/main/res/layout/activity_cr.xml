@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/main_background"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".CRActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableLayout
+            android:id="@+id/routineDetailsTableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:stretchColumns="*">
+            <TableRow style="@style/tableRowStyle2">
+                <TextView
+                    android:id="@+id/routineDetailsTitleId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:textSize="17sp"
+                    android:drawableEnd="@drawable/ic_refresh_black_24dp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold|italic"
+                    android:layout_marginBottom="5dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/routine_details_title" />
+                <ImageButton
+                    android:id="@+id/classAlarmImageButton"
+                    style="@style/Base.Widget.AppCompat.Button.Borderless"
+                    android:src="@drawable/icon_alarm"
+                    android:padding="0dp"
+                    android:layout_height="24dp"
+                    android:layout_width="24dp"
+                    />
+
+            </TableRow>
+
+            <TableRow style="@style/tableRowStyle2" android:layout_marginTop="2dp">
+                <TextView style="@style/routineHeadStyle" android:text="Time\n"/>
+                <TextView style="@style/routineHeadStyle" android:text="08\n00"/>
+                <TextView style="@style/routineHeadStyle" android:text="08\n50"/>
+                <TextView style="@style/routineHeadStyle" android:text="09\n40"/>
+                <TextView style="@style/routineHeadStyle" android:text="10\n40"/>
+                <TextView style="@style/routineHeadStyle" android:text="11\n30"/>
+                <TextView style="@style/routineHeadStyle" android:text="12\n20"/>
+                <TextView style="@style/routineHeadStyle" android:text="02\n30" />
+                <TextView style="@style/routineHeadStyle" android:text="03\n20"/>
+                <TextView style="@style/routineHeadStyle" android:text="04\n10"/>
+            </TableRow>
+            <TableRow style="@style/tableRowStyle2" android:layout_marginTop="5dp">
+                <TextView style="@style/routineDayStyle" android:text="SUN" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+            </TableRow>
+            <TableRow style="@style/tableRowStyle2" >
+                <TextView style="@style/routineDay2Style" android:text=" " />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+            </TableRow>
+            <TableRow style="@style/tableRowStyle2" android:layout_marginTop="5dp">
+                <TextView style="@style/routineDayStyle" android:text="MON" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+            </TableRow>
+            <TableRow style="@style/tableRowStyle2" >
+                <TextView style="@style/routineDay2Style" android:text=" " />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+            </TableRow>
+            <TableRow style="@style/tableRowStyle2" android:layout_marginTop="5dp">
+                <TextView style="@style/routineDayStyle" android:text="TUES" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+            </TableRow>
+            <TableRow style="@style/tableRowStyle2" >
+                <TextView style="@style/routineDay2Style" android:text=" " />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+            </TableRow>
+            <TableRow style="@style/tableRowStyle2" android:layout_marginTop="5dp">
+                <TextView style="@style/routineDayStyle" android:text="WEDNES" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+            </TableRow>
+            <TableRow style="@style/tableRowStyle2" >
+                <TextView style="@style/routineDay2Style" android:text=" " />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+            </TableRow>
+            <TableRow style="@style/tableRowStyle2" android:layout_marginTop="5dp">
+                <TextView style="@style/routineDayStyle" android:text="THURS" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+                <TextView style="@style/routineSubejctStyle" />
+            </TableRow>
+            <TableRow style="@style/tableRowStyle2" >
+                <TextView style="@style/routineDay2Style" android:text=" " />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+                <TextView style="@style/routineTeacherStyle" />
+            </TableRow>
+
+        </TableLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            style="@style/Base.Widget.AppCompat.Button.Colored"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btn_updateRoutine"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:visibility="gone"
+            android:padding="7dp"
+            android:onClick="onClick"
+            android:text="update"/>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/routineAlarmOkfab"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_gravity="right|bottom"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:src="@drawable/icon_check"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+
+</ScrollView>

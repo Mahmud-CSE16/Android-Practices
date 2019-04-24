@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/menuFirst">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:background="@drawable/main_menu_background"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:background="@drawable/dialog_head_background"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:padding="10dp"
+                android:textStyle="bold|italic"
+                android:text="About Developer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                />
+            <TextView
+                android:gravity="center"
+                android:padding="10dp"
+                android:background="@color/white"
+                android:textStyle="bold"
+                android:text="REPON ISLAM"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="#5a2c9d"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/developer_name"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sourav Chakraborty"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:textColorLink="@color/white"
+            android:text="@string/developer_details"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            />
+        <Button
+            android:background="@drawable/button_state_color_two"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="30dp"
+            android:autoLink="email"
+            android:drawablePadding="5dp"
+            android:lines="1"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/icon_feedback"
+            android:textColorLink="@color/white"
+            android:text="@string/developer_email"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="20dp"/>
+            <ImageView
+                android:scaleType="fitEnd"
+                android:layout_gravity="bottom"
+                android:layout_width="wrap_content"
+                android:src="@drawable/kuetian_logo"
+                android:layout_height="100dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

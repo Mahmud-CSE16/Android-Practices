@@ -1,0 +1,25 @@
+video: https://youtu.be/CeAuBFagMHQ
+
+KUETian (beta_3.0) 
+Student companion app for the KUETians....
+
+Features- 
+1. Profile
+2. Library safe and auto(experimental) renew 
+3. Schedule for next library renew 
+4. Automated Class Routine [Managed by CR]
+5. Automated CT and other schedules [Managed by CR] 
+6. Personal schedules 
+7. Classmate 
+8. Always Updated Teachers profile 
+9. Group browsing 
+10. Salah times 
+11. Hall autologin 
+12. Academic autologin 
+13. Library autologin 
+14. Automation, KUET web, Buses schedules linked up 
+15. Notifications for classes, schedules 
+16. Vibration mode during classes (experimental) and many more.... 
+
+
+Final version will be available in Google Playstore with more updates in the next semester Insha'Allah.

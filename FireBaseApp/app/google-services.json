@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "574263464038",
+    "firebase_url": "https://fir-app-335da.firebaseio.com",
+    "project_id": "fir-app-335da",
+    "storage_bucket": "fir-app-335da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:574263464038:android:d2fe75ce64ac576f",
+        "android_client_info": {
+          "package_name": "com.example.mahmud.firebaseapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "574263464038-m6s6jet7196q136khlrt73292cl6gqct.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDbWj-_x7yykuu5u1aBh72hWJWH-tFkm0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

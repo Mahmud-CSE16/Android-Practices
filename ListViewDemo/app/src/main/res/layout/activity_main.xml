@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_gradient"
+    tools:context=".MainActivity">
+
+    <AutoCompleteTextView
+        android:id="@+id/AutoCompletextViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your roll"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:textStyle="bold"/>
+
+
+    <ListView
+        android:id="@+id/ListViewId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#00f"
+        android:dividerHeight="2dp"
+        android:listSelector="#8a8ae6"></ListView>
+
+
+</LinearLayout>

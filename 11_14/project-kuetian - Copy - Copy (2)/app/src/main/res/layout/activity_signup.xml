@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/main_background"
+    android:fitsSystemWindows="true">
+<ScrollView
+    android:layout_gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="50dp"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            />
+
+        <!-- Name Label -->
+        <android.support.design.widget.TextInputLayout
+            style="@style/signupTextStyle">
+
+            <EditText android:id="@+id/input_name"
+                style="@style/signupEditTextStyle"
+                android:inputType="textPersonName"
+                android:nextFocusDown="@id/input_rollNumber"
+                android:imeOptions="actionNext"
+                android:hint="Name" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- mobile number -->
+        <android.support.design.widget.TextInputLayout
+            style="@style/signupTextStyle">
+            <EditText android:id="@+id/input_rollNumber"
+                style="@style/signupEditTextStyle"
+                android:hint="Roll Number"
+                android:nextFocusDown="@id/input_email"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <!--  Email Label -->
+        <android.support.design.widget.TextInputLayout
+            style="@style/signupTextStyle">
+            <EditText android:id="@+id/input_email"
+                style="@style/signupEditTextStyle"
+                android:nextFocusDown="@id/input_password"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:hint="Email (@stud.kuet.ac.bd)" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Password Label -->
+        <android.support.design.widget.TextInputLayout
+            style="@style/signupTextStyle">
+            <EditText android:id="@+id/input_password"
+                style="@style/signupEditTextStyle"
+                android:nextFocusDown="@id/input_reEnterPassword"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                android:hint="Password"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Password Re-enter Label -->
+        <android.support.design.widget.TextInputLayout
+            style="@style/signupTextStyle">
+            <EditText android:id="@+id/input_reEnterPassword"
+                style="@style/signupEditTextStyle"
+                android:inputType="textPassword"
+                android:nextFocusDown="@id/btn_signup"
+                android:imeOptions="actionDone"
+                android:hint="Re-enter Password"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Signup Button -->
+        <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:background="@drawable/button_state_color_two"
+            android:id="@+id/btn_signup"
+            android:layout_width="250dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="0dp"
+            android:padding="12dp"
+            android:text="Create Account"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:paddingTop="13dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textStyle="italic"
+                android:text="Already a member?"
+                android:gravity="center"
+                android:textSize="16sp"/>
+            <Button
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:id="@+id/link_login"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:drawableLeft="@drawable/ic_chevron_right_black_24dp"
+                android:textStyle="bold|italic"
+                android:text="Login"
+                android:gravity="center"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+    <ImageView
+        android:contentDescription="@string/developer_email"
+        android:src="@drawable/kuetian_logo"
+        android:scaleType="fitEnd"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_height="wrap_content"
+         />
+</FrameLayout>

@@ -1,0 +1,44 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back_one"
+    android:id="@+id/hallSetting">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="75dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Switch
+                android:layout_gravity="center_horizontal"
+                android:textSize="17sp"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:id="@+id/hallSwitch"
+                android:textColor="@color/white"
+                android:text="Load images "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:scaleType="fitEnd"
+        android:layout_gravity="bottom"
+        android:layout_width="wrap_content"
+        android:src="@drawable/kuetian_logo"
+        android:layout_height="wrap_content" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/menuclosefab"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_gravity="right|bottom"
+        android:layout_width="wrap_content"
+        android:src="@drawable/icon_check"
+        android:layout_height="wrap_content"
+        />
+
+</FrameLayout>
